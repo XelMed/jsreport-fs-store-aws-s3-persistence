@@ -1,6 +1,5 @@
-# jsreport-fs-store-aws-s3-persistence
+# jsreport-fs-store-aws-s3-persistence-all-options
 [![NPM Version](http://img.shields.io/npm/v/jsreport-fs-store-aws-s3-persistence.svg?style=flat-square)](https://npmjs.com/package/jsreport-fs-store-aws-s3-persistence)
-[![Build Status](https://travis-ci.org/jsreport/jsreport-fs-store-aws-s3-persistence.png?branch=master)](https://travis-ci.org/jsreport/jsreport-fs-store-aws-s3-persistence)
 
 **Make jsreport [fs store](https://github.com/jsreport/jsreport-fs-store) persisting entities into AWS S3.**
 
@@ -8,7 +7,7 @@
 ## Installation
 
 > npm install jsreport-fs-store
-> npm install jsreport-fs-store-aws-s3-persistence
+> npm install jsreport-fs-store-aws-s3-persistence-all-options
 
 Create an IAM user with permissions to S3 and SQS and copy the access key and secret access key.
 Create a bucket and copy its name. Then alter the jsreport configuration:
@@ -32,6 +31,8 @@ Create a bucket and copy its name. Then alter the jsreport configuration:
       "region": "us-east-1",
       "enabled": true,
       "attributes": {}
+    },
+    options:{ //any options for S3
     }
   }
 }
