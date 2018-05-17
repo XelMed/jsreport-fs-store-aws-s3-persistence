@@ -32,6 +32,9 @@ module.exports = {
                 type: 'object'
               }
             }
+          },
+          options: {
+            type: 'object'
           }
         }
       }
